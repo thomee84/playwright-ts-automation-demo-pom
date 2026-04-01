@@ -3,9 +3,9 @@ import { BasePage } from './BasePage';
 import { Product } from '../factories/product.factory';
 
 export class InventoryPage extends BasePage {
-  private productCard = this.page.locator('.inventory_item');
-  private productSort = this.page.locator('.product_sort_container');
-  private cartCheckout = this.page.locator('.shopping_cart_link');
+  private readonly productCard = this.page.locator('.inventory_item');
+  private readonly productSort = this.page.locator('.product_sort_container');
+  private readonly cartCheckout = this.page.locator('.shopping_cart_link');
 
   constructor(page: Page) {
     super(page);

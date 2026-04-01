@@ -2,14 +2,14 @@ import { Page } from '@playwright/test';
 import { BasePage } from './BasePage';
 
 export class ConfirmationPage extends BasePage {
-  private shippingInformation = this.page.locator('[data-test="shipping-info-value"]');
-  private priceTotal = this.page.locator('[data-test="subtotal-label"]');
-  private taxPrice = this.page.locator('[data-test="tax-label"]');
-  private totalPrice = this.page.locator('[data-test="total-label"]');
-  private finishButton = this.page.locator('[data-test="finish"]');
-  private cancelButton = this.page.locator('[data-test="cancel"]');
-  private backHomeButton = this.page.locator('[data-test="back-to-products"]');
-  private orderConfirmation = this.page.locator('[data-test="complete-header"]');
+  private readonly shippingInformation = this.page.locator('[data-test="shipping-info-value"]');
+  private readonly priceTotal = this.page.locator('[data-test="subtotal-label"]');
+  private readonly taxPrice = this.page.locator('[data-test="tax-label"]');
+  private readonly totalPrice = this.page.locator('[data-test="total-label"]');
+  private readonly finishButton = this.page.locator('[data-test="finish"]');
+  private readonly cancelButton = this.page.locator('[data-test="cancel"]');
+  private readonly backHomeButton = this.page.locator('[data-test="back-to-products"]');
+  private readonly orderConfirmation = this.page.locator('[data-test="complete-header"]');
 
   constructor(page: Page) {
     super(page);

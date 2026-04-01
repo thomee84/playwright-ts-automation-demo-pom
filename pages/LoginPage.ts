@@ -3,10 +3,10 @@ import { BasePage } from './BasePage';
 import { User } from '../factories/user.factory';
 
 export class LoginPage extends BasePage {
-  private usernameInput = this.page.getByPlaceholder('Username');
-  private passwordInput = this.page.getByPlaceholder('Password');
-  private loginButton = this.page.getByRole('button', { name: 'Login' });
-  private errorMessage = this.page.locator('[data-test="error"]');
+  private readonly usernameInput = this.page.getByPlaceholder('Username');
+  private readonly passwordInput = this.page.getByPlaceholder('Password');
+  private readonly loginButton = this.page.getByRole('button', { name: 'Login' });
+  private readonly errorMessage = this.page.locator('[data-test="error"]');
 
   constructor(page: Page) {
     super(page);

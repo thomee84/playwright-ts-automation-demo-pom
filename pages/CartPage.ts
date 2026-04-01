@@ -3,9 +3,9 @@ import { BasePage } from './BasePage';
 import { Product } from '../factories/product.factory';
 
 export class CartPage extends BasePage {
-  private continueShoppingButton = this.page.locator('[data-test="continue-shopping"]');
-  private checkoutButton = this.page.locator('[data-test="checkout"]');
-  private itemQuantity = this.page.locator('.cart_quantity');
+  private readonly continueShoppingButton = this.page.locator('[data-test="continue-shopping"]');
+  private readonly checkoutButton = this.page.locator('[data-test="checkout"]');
+  private readonly itemQuantity = this.page.locator('.cart_quantity');
 
   constructor(page: Page) {
     super(page);
